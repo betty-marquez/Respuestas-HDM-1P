@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Repaso Parcial 1 · Historia del Derecho Mexicano</title>
+<style>
+  :root {
+    --navy: #1e3a5f;
+    --navy-claro: #4a7ba6;
+    --dorado: #b8964f;
+    --dorado-claro: #e8dcc0;
+    --verde: #2e7d4f;
+    --fondo: #f7f5f0;
+    --texto: #1c1c1c;
+    --blanco: #fff;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--fondo);
+    color: var(--texto);
+  }
+  .pantalla {
+    display: none;
+    min-height: 100vh;
+    padding: 28px 22px 110px 22px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .pantalla.activa { display: block; }
+  .etiqueta {
+    font-size: 12px;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--navy-claro);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .num-slide {
+    display: inline-block;
+    background: var(--dorado-claro);
+    color: var(--navy);
+    border-radius: 5px;
+    padding: 1px 7px;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 6px;
+  }
+  h1 { font-size: 27px; color: var(--navy); margin: 0 0 12px 0; line-height: 1.3; }
+  h2 { font-size: 20px; color: var(--navy); margin: 0 0 14px 0; line-height: 1.35; font-weight: normal; }
+  p { font-size: 16px; line-height: 1.55; margin: 0 0 14px 0; }
+  .portada { text-align: center; padding-top: 22vh; }
+  .portada .escudo { font-size: 13px; letter-spacing: 0.08em; color: var(--dorado); text-transform: uppercase; margin-bottom: 18px; font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  .opciones { display: flex; flex-direction: column; gap: 8px; margin: 0 0 18px 0; }
+  .opcion {
+    padding: 12px 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1.5px solid #ddd;
+    background: var(--blanco);
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  .opcion.correcta {
+    border-color: var(--verde);
+    background: #eaf6ee;
+    font-weight: 600;
+    color: #1e5a34;
+  }
+  .justificacion {
+    background: var(--blanco);
+    border-left: 4px solid var(--navy-claro);
+    padding: 14px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+  }
+  .justificacion strong { color: var(--navy); }
+  .referencia {
+    background: var(--navy);
+    color: var(--blanco);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .referencia .icono { font-size: 20px; }
+  .referencia b { color: var(--dorado-claro); }
+  .cierre { text-align: center; padding-top: 20vh; }
+  .cierre .dorado { color: var(--dorado); }
+  .nav {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px calc(12px + env(safe-area-inset-bottom)) 20px;
+    background: var(--blanco);
+    border-top: 1px solid #e2ddd2;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  .btn {
+    padding: 11px 20px;
+    font-size: 15px;
+    border-radius: 9px;
+    border: none;
+    background: var(--navy);
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn:disabled { background: #ccc; }
+  .progreso { font-size: 12px; color: #888; }
+</style>
+</head>
+<body>
+
+<section class="pantalla activa" data-tipo="titulo">
+  <div class="portada">
+    <div class="escudo">Historia del Derecho Mexicano · 07LED109 · Grupo 113</div>
+    <h1>Repaso — Parcial 1</h1>
+    <p>20 reactivos del examen, cada uno con la diapositiva exacta de la sesión donde se vio el contenido.</p>
+    <p style="font-size:14px; color:#666;">10 de septiembre de 2026</p>
+  </div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 1A · Periodos y Fuentes<span class="num-slide">Diapositiva 3</span></div>
+  <h2>Un estudiante sostiene: "no puede llamarse derecho a las normas de los pueblos prehispánicos, porque mezclaban indistintamente cuestiones religiosas, morales y de guerra con las jurídicas".</h2>
+  <div class="opciones">
+    <div class="opcion">a) Es correcta, porque solo hay derecho donde existe separación entre lo jurídico, lo religioso y lo moral</div>
+    <div class="opcion">b) Es incorrecta, porque los pueblos prehispánicos copiaron la separación jurídica del derecho romano</div>
+    <div class="opcion correcta">c) Es incorrecta, porque el derecho prehispánico sí era derecho, solo que con una visión holista que buscaba reproducir el orden cósmico</div>
+  </div>
+  <div class="justificacion">La mezcla con religión y moral refleja la lógica interna del derecho prehispánico (reproducir el orden cósmico), no la ausencia de derecho. Asumir que la separación moderna es condición necesaria de "derecho" es la lectura presentista que la sesión corrige.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>1A Periodos y Fuentes</b>, diapositiva 3 — "La Arquitectura del Orden Cósmico / Holismo Jurídico"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 1A · Periodos y Fuentes<span class="num-slide">Diapositiva 6</span></div>
+  <h2>Un grupo humano habita el norte del actual territorio mexicano hacia el año 1000 d.C.: caza y recolecta, no practica agricultura intensiva y no ha desarrollado grandes centros urbanos ni instituciones jurídicas complejas.</h2>
+  <div class="opciones">
+    <div class="opcion correcta">a) Aridoamérica</div>
+    <div class="opcion">b) Mesoamérica</div>
+    <div class="opcion">c) El imperio purépecha</div>
+  </div>
+  <div class="justificacion">Cazadores-recolectores nómadas del norte, sin agricultura intensiva ni instituciones complejas, es la definición de Aridoamérica. Mesoamérica es justo lo opuesto (agricultura intensiva, grandes centros urbanos); el imperio purépecha es un señorío específico, no una zona geográfica.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>1A Periodos y Fuentes</b>, diapositiva 6 — "La geografía dicta la norma"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 1A · Periodos y Fuentes<span class="num-slide">Diapositiva 11</span></div>
+  <h2>Un historiador encuentra un manuscrito pictográfico elaborado por los propios pueblos mesoamericanos antes de la Conquista.</h2>
+  <div class="opciones">
+    <div class="opcion">a) Obra de un historiador español posterior a la Conquista</div>
+    <div class="opcion correcta">b) Códice</div>
+    <div class="opcion">c) Obra de un historiador indígena posterior a la Conquista</div>
+  </div>
+  <div class="justificacion">El documento fue creado por los propios pueblos mesoamericanos antes de la Conquista: es fuente directa. No debe confundirse con obras de cronistas españoles (fuente indirecta) ni con historiadores indígenas poscortesianos, que escribieron después recuperando tradición oral.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>1A Periodos y Fuentes</b>, diapositiva 11 — panel "Fuentes Directas (Creadas por ellos)"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 1B · Cultura y cosmovisión<span class="num-slide">Diapositiva 3</span></div>
+  <h2>Durante el periodo clásico mesoamericano, un aldeano no participa en las obras obligatorias del canal de riego porque atendía a un familiar gravemente enfermo. El sistema falla y afecta a toda la comunidad; la autoridad le impone una sanción sin valorar el motivo.</h2>
+  <div class="opciones">
+    <div class="opcion">a) El derecho natural inmutable, que aplica la misma norma en cualquier época y lugar</div>
+    <div class="opcion correcta">b) La transgresión objetiva del acto, donde la intención del sujeto es irrelevante frente al daño causado al equilibrio colectivo</div>
+    <div class="opcion">c) Los derechos individuales del macehual, que prevalecen sobre las obligaciones fiscales del señorío</div>
+  </div>
+  <div class="justificacion">El delito era una transgresión objetiva del acto: la intención era irrelevante frente al daño al equilibrio colectivo. El derecho mesoamericano era consuetudinario y local, no un derecho natural inmutable; el individuo estaba supeditado al colectivo, no al revés.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>1B Cultura y cosmovisión</b>, diapositiva 3 — "La Ruptura: El Delito como Contaminación Objetiva"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 2A · Derecho Maya y Azteca<span class="num-slide">Diapositiva 4</span></div>
+  <h2>En los señoríos mayas del Posclásico, las provincias (batabil) eran gobernadas por un funcionario cuyo título significa literalmente "el que porta el hacha".</h2>
+  <div class="opciones">
+    <div class="opcion correcta">a) El Batab</div>
+    <div class="opcion">b) El Halach Uinic</div>
+    <div class="opcion">c) El Ah Cuch Cab</div>
+  </div>
+  <div class="justificacion">El Batab gobierna el batabil (provincia), nivel intermedio entre el cuchcabal y el cuchteel. El Halach Uinic gobierna el cuchcabal (unidad territorial máxima); el Ah Cuch Cab representa al cuchteel (grupo de familias emparentadas), el nivel más local.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>2A Derecho Maya y Azteca</b>, diapositiva 4 — "La Arquitectura del Señorío Maya"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 2A · Derecho Maya y Azteca<span class="num-slide">Diapositiva 7</span></div>
+  <h2>Un litigante maya, antes de presentar su caso ante el juez, le entrega un obsequio.</h2>
+  <div class="opciones">
+    <div class="opcion">a) Como cohecho, un delito de soborno equivalente al del derecho penal moderno</div>
+    <div class="opcion">b) Como un requisito procesal exclusivo de los litigios contra la nobleza</div>
+    <div class="opcion correcta">c) Como una especie de tasa o protocolo social esperado, un rito de entrada al proceso, no como corrupción</div>
+  </div>
+  <div class="justificacion">La sesión aclara expresamente que el obsequio previo al juez "no era corrupción", sino un rito de entrada esperado — una práctica general del proceso, no restringida a litigios contra la nobleza.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>2A Derecho Maya y Azteca</b>, diapositiva 7 — "El Juez Único y la Anatomía del Cohecho Legitimado"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 2B · Otras culturas prehispánicas<span class="num-slide">Diapositiva 9</span></div>
+  <h2>En una sociedad prehispánica, la vigilancia inicial de una disputa corría a cargo de un funcionario sin facultades para sentenciar; el caso pasaba después a un juez local sin poder de imponer pena de muerte, pues esta estaba reservada.</h2>
+  <div class="opciones">
+    <div class="opcion correcta">a) Mixteca</div>
+    <div class="opcion">b) Purépecha</div>
+    <div class="opcion">c) Zapoteca</div>
+  </div>
+  <div class="justificacion">Esquema vigilante (topil) seguido de juez local sin pena de muerte (tequitato), tipo "jurado de colaciones" para pleitos de tierras y agua: es el esquema visto para la cultura mixteca. La justicia purépecha era oral y sumaria a cargo de un consejo de ancianos; la zapoteca centralizaba la sentencia en el coqui local.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>2B Otras culturas prehispánicas</b>, diapositiva 9 — "Justicia Comunitaria Mixteca: Vigilancia e Indagatoria"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 2B · Otras culturas prehispánicas<span class="num-slide">Diapositiva 13</span></div>
+  <h2>Un condenado por adulterio con la esposa del máximo jefe militar de su señorío es sentenciado a ser enterrado vivo, dejando solo la cabeza descubierta a merced de los animales de rapiña.</h2>
+  <div class="opciones">
+    <div class="opcion">a) Maya; se trata de un caso ordinario resuelto por el Batab sin agravante</div>
+    <div class="opcion correcta">b) Purépecha; se trata de un delito imperdonable, agravado por ser un crimen contra el propio Estado</div>
+    <div class="opcion">c) Zapoteca; se trata de un robo grave sancionado con confiscación total</div>
+  </div>
+  <div class="justificacion">El "enterramiento en vida" es la pena purépecha vista para delitos imperdonables, agravados si ofenden directamente al Estado (adulterio con esposa del Calzontzin). No corresponde al sistema penal maya ni al robo grave zapoteco (que se sancionaba con ejecución y confiscación).</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>2B Otras culturas prehispánicas</b>, diapositiva 13 — "El Rigor Purépecha: Sangre y Linaje"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 3A · Derecho castellano<span class="num-slide">Diapositiva 4</span></div>
+  <h2>Un historiador contrasta dos tradiciones jurídicas: una desarrollada de manera orgánica e ininterrumpida a partir de la necesidad, el clima y la geografía local; y otra nacida del choque de imperios, que cruzaría el Atlántico como imposición en 1519.</h2>
+  <div class="opciones">
+    <div class="opcion correcta">a) Derecho endógeno y derecho exógeno</div>
+    <div class="opcion">b) Derecho consuetudinario y derecho positivo</div>
+    <div class="opcion">c) Derecho público y derecho privado</div>
+  </div>
+  <div class="justificacion">Es la distinción usada en la sesión 3A para contrastar el origen orgánico mesoamericano frente al origen impuesto del derecho castellano.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>3A Derecho castellano</b>, diapositiva 4 — "Dos Mundos, Dos Orígenes"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 3A · Derecho castellano<span class="num-slide">Diapositiva 12</span></div>
+  <h2>Tras la invasión musulmana de 711, una parte de la población cristiana permaneció bajo dominio musulmán y conservó íntegramente su propio ordenamiento jurídico de origen visigodo.</h2>
+  <div class="opciones">
+    <div class="opcion correcta">a) Población mozárabe; conservó el Fuero Juzgo</div>
+    <div class="opcion">b) Población mudéjar; conservó el Ordenamiento de Alcalá</div>
+    <div class="opcion">c) Población morisca; conservó las Siete Partidas</div>
+  </div>
+  <div class="justificacion">Los mozárabes son la población cristiana bajo dominio musulmán que conservó íntegro el Fuero Juzgo visigodo. Mudéjar designa a la población musulmana bajo dominio cristiano (lo opuesto); morisca corresponde a otro periodo, muy posterior.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>3A Derecho castellano</b>, diapositiva 12 — "Población Mozárabe: conservan íntegramente su orden jurídico"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 3B · Reconquista y Ius Commune<span class="num-slide">Diapositiva 5</span></div>
+  <h2>Tras la derrota del último rey visigodo en 711, un núcleo de resistencia cristiana en el norte peninsular logra mantener intacto el derecho visigodo original.</h2>
+  <div class="opciones">
+    <div class="opcion">a) Aragón y Castilla</div>
+    <div class="opcion">b) Castilla y Portugal</div>
+    <div class="opcion correcta">c) Asturias y León</div>
+  </div>
+  <div class="justificacion">Es el núcleo de resistencia cristiana identificado en clase que conservó intacto el derecho visigodo tras 711. Aragón surge como entidad distinta del proceso de Reconquista; Castilla es una escisión posterior del núcleo astur-leonés.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>3B Reconquista y Ius Commune</b>, diapositiva 5 — "Asturias y León — Núcleo de resistencia cristiana"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 3B · Reconquista y Ius Commune<span class="num-slide">Diapositiva 11</span></div>
+  <h2>Una comunidad recién reconquistada acuerda con el rey que este reconocerá y respetará sus derechos y organización local, a cambio de fidelidad, tributos y sometimiento.</h2>
+  <div class="opciones">
+    <div class="opcion">a) El fuero como imposición unilateral del rey sin negociación posible</div>
+    <div class="opcion correcta">b) El fuero como contrato bidireccional: aceptación mutua y pluralidad de derechos, no imposición</div>
+    <div class="opcion">c) El fuero como sinónimo exacto del Ius Commune del rey</div>
+  </div>
+  <div class="justificacion">La sesión define explícitamente el fuero como aceptación mutua y pluralidad de derechos, no como imposición. El Ius Commune es un sistema letrado y académico de origen boloñés, de lógica opuesta a la del fuero local y pactado.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>3B Reconquista y Ius Commune</b>, diapositiva 11 — "El derecho como contrato bidireccional"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 3B · Reconquista y Ius Commune<span class="num-slide">Diapositiva 14</span></div>
+  <h2>Un lugar recién reconquistado y despoblado necesita atraer pobladores con urgencia. La Corona ofrece exención de impuestos, entrega de tierras y derecho de aprovechamiento de montes.</h2>
+  <div class="opciones">
+    <div class="opcion correcta">a) Carta Puebla</div>
+    <div class="opcion">b) Fuero Juzgo</div>
+    <div class="opcion">c) Ius Commune</div>
+  </div>
+  <div class="justificacion">La Carta Puebla está dirigida a lugares despoblados, para atraer pobladores con exenciones y entrega de tierras — a diferencia del fuero, dirigido a población ya formada, para regular integralmente su vida comunal.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>3B Reconquista y Ius Commune</b>, diapositiva 14 — tabla "Fueros vs. Cartas Pueblas"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 4A · Alfonso X y las 7 Partidas<span class="num-slide">Diapositiva 4</span></div>
+  <h2>Antes del siglo XIII, el rey medieval castellano resolvía caso por caso, sin la potestad de crear normas generales, pues el derecho subía de la costumbre local. ¿Qué reclama Alfonso X que rompe con este paradigma?</h2>
+  <div class="opciones">
+    <div class="opcion">a) El derecho heredado íntegro del derecho visigodo</div>
+    <div class="opcion correcta">b) La potestas condendi leges: la potestad regia de crear leyes generales</div>
+    <div class="opcion">c) El derecho consuetudinario prerromano de base tribal</div>
+  </div>
+  <div class="justificacion">Es el concepto explícito con que Alfonso X rompe el paradigma del "rey que juzga" para convertirse en "rey que legisla". El Fuero Juzgo es el texto visigodo anterior, asociado precisamente al viejo paradigma.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>4A Alfonso X y las 7 Partidas</b>, diapositiva 4 — "La oleada codificadora del siglo XIII / La Potestas Condendi Leges"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 4A · Alfonso X y las 7 Partidas<span class="num-slide">Diapositiva 8</span></div>
+  <h2>Ante la resistencia de municipios y señoríos libres a un derecho unificado desde la Corona, Alfonso X promulga en 1255 un texto de cuatro libros (político, procesal, civil y penal) destinado a las tierras de realengo.</h2>
+  <div class="opciones">
+    <div class="opcion correcta">a) El Fuero Real</div>
+    <div class="opcion">b) El Ius Commune</div>
+    <div class="opcion">c) Las Siete Partidas</div>
+  </div>
+  <div class="justificacion">El Fuero Real (1255) es el texto pragmático de cuatro libros dirigido específicamente a tierras de realengo. Las Siete Partidas son una enciclopedia jurídica de siete libros, de vigencia diferida como derecho supletorio — no el texto de 1255.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>4A Alfonso X y las 7 Partidas</b>, diapositiva 8 — "El Fuero Real (1255)"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 4A · Alfonso X y las 7 Partidas<span class="num-slide">Diapositiva 9</span></div>
+  <h2>Un texto jurídico de Alfonso X retoma el Corpus Iuris Civilis de Justiniano, el derecho canónico y textos filosóficos de Aristóteles y Séneca; cada precepto viene acompañado de una exposición argumentativa de sus fundamentos.</h2>
+  <div class="opciones">
+    <div class="opcion">a) El Fuero Real</div>
+    <div class="opcion">b) El Ius Commune</div>
+    <div class="opcion correcta">c) Las Siete Partidas</div>
+  </div>
+  <div class="justificacion">Las Siete Partidas son la "enciclopedia castellana del Ius Commune": sintetizan a Justiniano (Corpus Iuris Civilis), la Iglesia (derecho canónico), Aristóteles (filosofía) y Séneca (moral estoica), con la técnica legislativa de acompañar cada precepto de su fundamento argumentativo.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>4A Alfonso X y las 7 Partidas</b>, diapositiva 9 — "Las Siete Partidas (c. 1263): La Enciclopedia Castellana del Ius Commune"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 4A · Alfonso X y las 7 Partidas<span class="num-slide">Diapositiva 10</span></div>
+  <h2>Un rey conocido como el Sabio ordenó elaborar un texto legal dividido en siete grandes partes. ¿Quién ordenó elaborar las Siete Partidas?</h2>
+  <div class="opciones">
+    <div class="opcion correcta">a) Alfonso X</div>
+    <div class="opcion">b) Isabel I</div>
+    <div class="opcion">c) Felipe II</div>
+  </div>
+  <div class="justificacion">Es el rey al que la sesión atribuye la obra de las Siete Partidas. Alfonso XI es quien promulgó el Ordenamiento de Alcalá (1348), un texto posterior y distinto; Felipe II promulgó la Nueva Recopilación (1567), varios siglos después.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>4A Alfonso X y las 7 Partidas</b>, diapositiva 10 — facsímil del Prólogo: "Las Siete Partidas del Sabio Rey don Alfonso"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 4A · Alfonso X y las 7 Partidas<span class="num-slide">Diapositiva 13</span></div>
+  <h2>En 1348, el rey Alfonso XI reunió a las Cortes en Alcalá de Henares para poner orden entre los distintos textos legales. ¿Cómo se llama el texto resultante?</h2>
+  <div class="opciones">
+    <div class="opcion">a) El Fuero Real</div>
+    <div class="opcion">b) La Novísima Recopilación</div>
+    <div class="opcion correcta">c) El Ordenamiento de Alcalá</div>
+  </div>
+  <div class="justificacion">Es el texto que resultó de las Cortes de Alcalá de 1348, convocadas por Alfonso XI. El Fuero Real es un texto anterior (1255) de Alfonso X; la Novísima Recopilación es mucho más tardía (1805).</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>4A Alfonso X y las 7 Partidas</b>, diapositiva 13 — "El Ordenamiento de Alcalá (1348)"</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 4A · Alfonso X y las 7 Partidas<span class="num-slide">Diapositiva 13</span></div>
+  <h2>En 1348 se crea el Ordenamiento de Alcalá, que establece una jerarquía de textos. Según esa jerarquía, ¿en qué posición quedaron las Siete Partidas?</h2>
+  <div class="opciones">
+    <div class="opcion">a) En la cúspide, como ley de aplicación más importante</div>
+    <div class="opcion correcta">b) En la base, como derecho supletorio de última instancia</div>
+    <div class="opcion">c) En el nivel intermedio, junto con los fueros municipales</div>
+  </div>
+  <div class="justificacion">La jerarquía del Ordenamiento de Alcalá (1348) coloca a las Siete Partidas como derecho supletorio de última instancia. La cúspide corresponde a las leyes del propio Ordenamiento; el nivel intermedio, a los fueros municipales y al Fuero Juzgo.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>4A Alfonso X y las 7 Partidas</b>, diapositiva 13 — misma pirámide del Ordenamiento de Alcalá</div>
+</section>
+
+<section class="pantalla" data-tipo="contenido">
+  <div class="etiqueta">Bloque 4B · Compilación castellana<span class="num-slide">Diapositiva 2</span></div>
+  <h2>Un jurista explica que una recopilación no crea leyes nuevas, sino que reúne y ordena leyes que ya existían. ¿Qué frase resume esta idea?</h2>
+  <div class="opciones">
+    <div class="opcion">a) "Recopilar es codificar"</div>
+    <div class="opcion correcta">b) "Recopilar no es codificar"</div>
+    <div class="opcion">c) "Codificar es innecesario"</div>
+  </div>
+  <div class="justificacion">El material distingue expresamente que una recopilación reúne y ordena leyes preexistentes, sin crear un cuerpo normativo unitario desde cero — a diferencia de la codificación.</div>
+  <div class="referencia"><span class="icono">📍</span>Repásalo en <b>4B Compilación castellana</b>, diapositiva 2 — "El dilema conceptual: Recopilar vs. Codificar"</div>
+</section>
+
+<section class="pantalla" data-tipo="titulo">
+  <div class="cierre">
+    <div class="escudo" style="font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; font-size:13px; letter-spacing:0.08em; color:var(--dorado); text-transform:uppercase; margin-bottom:18px;">Fin del repaso</div>
+    <h1>¿Alguna sigue sin cuadrar?</h1>
+    <p>Vuelve a la diapositiva que se indicó en cada pregunta — ahí está el contenido completo, no solo la respuesta.</p>
+  </div>
+</section>
+
+<div class="nav">
+  <button class="btn" id="btnAtras">Atrás</button>
+  <span class="progreso" id="progreso"></span>
+  <button class="btn" id="btnSiguiente">Siguiente</button>
+</div>
+
+<script>
+(function () {
+  var pantallas = Array.prototype.slice.call(document.querySelectorAll('.pantalla'));
+  var indice = 0;
+
+  function mostrar(i) {
+    pantallas.forEach(function (p, idx) { p.classList.toggle('activa', idx === i); });
+    document.getElementById('progreso').textContent = (i + 1) + ' / ' + pantallas.length;
+    document.getElementById('btnAtras').disabled = i === 0;
+    document.getElementById('btnSiguiente').disabled = i === pantallas.length - 1;
+    window.scrollTo(0, 0);
+  }
+
+  document.getElementById('btnAtras').addEventListener('click', function () {
+    if (indice > 0) { indice--; mostrar(indice); }
+  });
+  document.getElementById('btnSiguiente').addEventListener('click', function () {
+    if (indice < pantallas.length - 1) { indice++; mostrar(indice); }
+  });
+
+  mostrar(0);
+})();
+</script>
+
+</body>
+</html>
